@@ -352,7 +352,7 @@ Linux codespaces-51ad15 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59
 11. What is the available free memory in the system. ***(1 mark)***
 ```bash
 @nshameera ➜ /workspaces/OSProject (main) $ 6.0GiB
-6.0GiB
+codespace
 ```
 12. What is the available disk space mounted on /workspace. ***(1 mark)***
 ```bash
@@ -385,10 +385,6 @@ ls -asl used to list files and directories with detailed information such as -a 
 @nshameera ➜ /workspaces/OSProject (main) $ PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
 2939 codespa+  20   0   21.5g 348176  49792 S   1.0   4.3   1:03.50 <process_name>
 /workspaces/OSProject
-```
-11. What is the available free memory in the system. **(1 mark)**
-```bash
-6.9GiB 
 ```
 ## Running your own container instance.
 
