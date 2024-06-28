@@ -349,13 +349,56 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6098.5 avail Mem
 @AzrReen ➜ /workspaces/OSProject (main) $ uname -a
 Linux codespaces-51ad15 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+11. What is the available free memory in the system. ***(1 mark)***
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ 6.0GiB
+6.0GiB
+```
+
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ 20772320
+/workspaces/OSProject
+```
+
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ Version: 6.5.0-1022-azure Hardware Architecture: x86_64
+/workspaces/OSProject
+```
+
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ ls used to list the files and directories in the current directory without displaying detailed information.
+ls -asl used to list files and directories with detailed information such as -a (to show all files), -s (to show the size of all files) and -l (to show permissions, number of links, owner, group, size, and timestamp).
+/workspaces/OSProject
+```
+
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ 2560 4K pages
+/workspaces/OSProject
+```
+
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ 3243.673
+/workspaces/OSProject
+```
+
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+2939 codespa+  20   0   21.5g 348176  49792 S   1.0   4.3   1:03.50 <process_name>
+/workspaces/OSProject
+```
 
 ## Running your own container instance.
 
