@@ -58,8 +58,8 @@ https://github.com/AzrReen/OSProject
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
-Linux
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+Ubuntu Linux
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces. ***(1 mark)*** 
 First option with 8GB ram, 32GB disk and 2-core. The other one with 16GB ram, 32GB disk and 4-core.
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 To ensure any changes made are successfully saved and may acts as a backup.
