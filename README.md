@@ -533,7 +533,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
  <img src="./images/helloworldweb.png" width="70%">
 
  ```bash
- @nshameera ➜ /workspaces/OSProject (main) $ Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
+Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
  ```
 
 ***Questions:***
