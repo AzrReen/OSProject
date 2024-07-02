@@ -445,14 +445,15 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)***
+
 ```bash
-@nshameera ➜ /workspaces/OSProject (main) $ Files in Docker containers are not persistent by default as they are made to be ephemeral. Thus, when a container is removed, any changes made to the filesystems will be lost.
-/workspaces/OSProject
+Files in Docker containers are not persistent by default as they are made to be ephemeral. Thus, when a container is removed, any changes made to the filesystems will be lost.
 ```
+
 2. Can we run two, or three instances of debian linux? . ***(1 mark)***
+
 ```bash
-@nshameera ➜ /workspaces/OSProject (main) $ Yes, multiple instances can be run on Debian Linux as a separate container.
-/workspaces/OSProject
+Yes, multiple instances can be run on Debian Linux as a separate container.
 ```
 
 ## Running your own container with persistent storage
@@ -533,7 +534,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
  <img src="./images/helloworldweb.png" width="70%">
 
  ```bash
-Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
+ @nshameera ➜ /workspaces/OSProject (main) $ Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
  ```
 
 ***Questions:***
@@ -555,7 +556,6 @@ drwxrwxrwx+ 2 codespace codespace 4096 Jul  2 18:41 /workspaces/OSProject/webpag
 
 ```bash
 @nshameera ➜ /workspaces/OSProject/webpage (main) $ Port 8080
-```
 
 ## Create SUB Networks
 
