@@ -489,7 +489,15 @@ total 0
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+
+```bash
+@nshameera ➜ /workspaces/OSProject/myroot (main) $ Yes, the permission of the files to user codespace can be change. However in this case, no such file is found in the directory.
+```
+OUTPUT:
+```bash
+@nshameera ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace myroot
+chown: cannot access 'myroot': No such file or directory
+```
 
 ## You are on your own, create your own static webpage
 
