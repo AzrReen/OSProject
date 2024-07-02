@@ -502,7 +502,18 @@ chown: cannot access 'myroot': No such file or directory
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ mkdir webpage
+```
+
 2. Inside the directory, create a page index.html, with any content you would like
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ cd webpage
+@nshameera ➜ /workspaces/OSProject/webpage (main) $ echo '<html><body><h1>Hai! Welcome to our OS Project!</h1></body></html>' > index.html
+```
+
 3. Then, run the apache webserver and mount the webpage directory to it. Hint:
 ```bash
 ## the -p 8080:80 flag points the host port 8080 to the container port 80
@@ -521,11 +532,30 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
  <img src="./images/helloworldweb.png" width="70%">
 
+ ```bash
+ @nshameera ➜ /workspaces/OSProject (main) $ Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
+ ```
+
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject/webpage (main) $ ls -ld /workspaces/OSProject/webpage
+drwxrwxrwx+ 2 codespace codespace 4096 Jul  2 18:41 /workspaces/OSProject/webpage
+```
+
+2. What port is the apache web server running. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject/webpage (main) $ Port 80
+```
+
 3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+
+```bash
+@nshameera ➜ /workspaces/OSProject/webpage (main) $ Port 8080
+```
 
 ## Create SUB Networks
 
