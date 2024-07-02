@@ -476,7 +476,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
 
 ```bash
-@nshameera ➜ /workspaces/OSProject/myroot (main) $ No file found.
+Answer: No file found.
 ```
 OUTPUT:
 ```bash
@@ -488,11 +488,10 @@ total 0
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
-
 ```
 
 ```bash
-@nshameera ➜ /workspaces/OSProject/myroot (main) $ Yes, the permission of the files to user codespace can be change. However in this case, no such file is found in the directory.
+Yes, the permission of the files to user codespace can be change. However in this case, no such file is found in the directory.
 ```
 OUTPUT:
 ```bash
