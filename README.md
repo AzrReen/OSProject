@@ -580,11 +580,47 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+
+```bash
+BusyBox is a suite of software that contains many Unix utilities within one executable file. Due to its small size, it is used in many sets of embedded Linux systems. In addition, the command switch --name is used to specify a name for a Docker container.
+```
+
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+26fdd8eca373   bluenet   bridge    local
+c65ec3a87aad   bridge    bridge    local
+05bcc8c14bf6   host      host      local
+a57658e125df   none      null      local
+d3f86e414511   rednet    bridge    local
+```
+
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)
+
+```bash
+Gateway of Bluenet: 172.18.0.1
+Gateway of Rednet: 172.19.0.1
+```
+
+4. What is the network address for the running container c1 and c2? ***(1 mark)
+```bash
+IP Address c1: 172.18.0.2
+IP Address c2: 172.19.0.2
+```
+
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+
+```bash
+No, ping is unsuccessful.
+```
+OUTPUT:
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+ping: bad address 'c2'
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
