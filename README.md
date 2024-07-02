@@ -541,6 +541,12 @@ Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.gith
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
 
 ```bash
+Permission: drwxrwxrwx
+User: root
+Root: root
+```
+OUTPUT:
+```bash
 @nshameera ➜ /workspaces/OSProject/webpage (main) $ ls -ld /workspaces/OSProject/webpage
 drwxrwxrwx+ 2 codespace codespace 4096 Jul  2 18:41 /workspaces/OSProject/webpage
 ```
