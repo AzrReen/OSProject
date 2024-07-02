@@ -533,7 +533,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
  <img src="./images/helloworldweb.png" width="70%">
 
  ```bash
- @nshameera ➜ /workspaces/OSProject (main) $ Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
+Link to the webpage: https://obscure-rotary-phone-r4r66xq5rwp62j9q-8080.app.github.dev/index.html
  ```
 
 ***Questions:***
@@ -548,13 +548,14 @@ drwxrwxrwx+ 2 codespace codespace 4096 Jul  2 18:41 /workspaces/OSProject/webpag
 2. What port is the apache web server running. ***(1 mark)*** 
 
 ```bash
-@nshameera ➜ /workspaces/OSProject/webpage (main) $ Port 80
+Port 80
 ```
 
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+3. What port is open for http protocol on the host machine? ***(1 mark)***
 
 ```bash
-@nshameera ➜ /workspaces/OSProject/webpage (main) $ Port 8080
+Port 8080
+```
 
 ## Create SUB Networks
 
