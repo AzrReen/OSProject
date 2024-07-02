@@ -632,8 +632,50 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** 
+
+```bash
+Yes, the ping is successful.
+```
+OUTPUT:
+```bash
+@nshameera ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.140 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.076 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.059 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.083 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.074 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.073 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.060 ms
+64 bytes from 172.20.0.3: seq=11 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=12 ttl=64 time=0.092 ms
+64 bytes from 172.20.0.3: seq=13 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=14 ttl=64 time=0.061 ms
+64 bytes from 172.20.0.3: seq=15 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=16 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=17 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=18 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=19 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=20 ttl=64 time=0.094 ms
+64 bytes from 172.20.0.3: seq=21 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=22 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=23 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=24 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=25 ttl=64 time=0.107 ms
+64 bytes from 172.20.0.3: seq=26 ttl=64 time=0.086 ms
+...
+```
+
+2. What is different from the previous ping in the section above? ***(1 mark)***
+
+```bash
+In the previous attempt, the ping was unsuccessful as it result in an error message "ping: bad address 'c2'". This shows that the containers are unable to reach one another as they are in different networks. However in this attempt, the ping is successful as the containers are connected to a bridgenet (a new bridge network).
+```
 
 ## Intermediate Level (10 marks bonus)
 
